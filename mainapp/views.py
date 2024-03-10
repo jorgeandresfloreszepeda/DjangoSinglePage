@@ -6,7 +6,13 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return HttpResponse("Bonjour Django, seconde time!")
+    return render(request, "mainapp/home.html")
+
+def about(request):
+    return render(request, "mainapp/about.html")
+
+def contact(request):
+    return render(request, "mainapp/contact.html")
 
 def hello_there(request, name):
     print(request.build_absolute_uri()) #optional
