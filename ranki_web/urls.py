@@ -23,3 +23,5 @@ urlpatterns = [
     path('admin/', admin.site.urls)
 ]
 urlpatterns += staticfiles_urlpatterns()
+
+secrets = "8127378962378927839072897346278963"
